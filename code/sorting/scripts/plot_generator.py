@@ -31,8 +31,9 @@ def obtener_coincidencias_memoria(series_memoria, algoritmo_referencia):
 
     return coincidencias
 
-ruta_csv = r'C:\Users\felip\Desktop\T1\code\sorting\data\measurements\a.csv'
-ruta_plots = r'C:\Users\felip\Desktop\T1\code\sorting\data\plots'
+directorio_modulo = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+ruta_csv = os.path.join(directorio_modulo, "data", "measurements", "a.csv")
+ruta_plots = os.path.join(directorio_modulo, "data", "plots")
 
 os.makedirs(ruta_plots, exist_ok=True)
 

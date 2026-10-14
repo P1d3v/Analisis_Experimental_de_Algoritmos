@@ -2,8 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-ruta_csv = r'C:\Users\felip\Desktop\T1\code\matrix_multiplication\data\measurements\a.csv'
-ruta_plots = r'C:\Users\felip\Desktop\T1\code\matrix_multiplication\data\plots'
+directorio_modulo = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+ruta_csv = os.path.join(directorio_modulo, "data", "measurements", "a.csv")
+ruta_plots = os.path.join(directorio_modulo, "data", "plots")
 
 os.makedirs(ruta_plots, exist_ok=True)
 
